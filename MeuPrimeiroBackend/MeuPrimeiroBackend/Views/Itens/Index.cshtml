@@ -1,0 +1,57 @@
+﻿@model IEnumerable<MeuPrimeiroBackend.Models.Item>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DanoMaximo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DanoMinimo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Durabilidade)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descricao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DanoMaximo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DanoMinimo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Durabilidade)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ItemID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ItemID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ItemID })
+        </td>
+    </tr>
+}
+
+</table>

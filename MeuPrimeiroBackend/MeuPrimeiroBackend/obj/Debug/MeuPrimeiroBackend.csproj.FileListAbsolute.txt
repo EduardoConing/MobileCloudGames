@@ -95,3 +95,7 @@ C:\Users\6458\Documents\Douglas\Projetos\MeuPrimeiroBackend\MeuPrimeiroBackend\o
 C:\Users\6458\Documents\Douglas\Projetos\MeuPrimeiroBackend\MeuPrimeiroBackend\obj\Debug\MeuPrimeiroBackend.csproj.CoreCompileInputs.cache
 C:\Users\6458\Documents\Douglas\Projetos\MeuPrimeiroBackend\MeuPrimeiroBackend\obj\Debug\MeuPrimeiroBackend.dll
 C:\Users\6458\Documents\Douglas\Projetos\MeuPrimeiroBackend\MeuPrimeiroBackend\obj\Debug\MeuPrimeiroBackend.pdb
+C:\Users\6458\Documents\Douglas\Projetos\MeuPrimeiroBackend\MeuPrimeiroBackend\bin\EntityFramework.dll
+C:\Users\6458\Documents\Douglas\Projetos\MeuPrimeiroBackend\MeuPrimeiroBackend\bin\EntityFramework.SqlServer.dll
+C:\Users\6458\Documents\Douglas\Projetos\MeuPrimeiroBackend\MeuPrimeiroBackend\bin\EntityFramework.xml
+C:\Users\6458\Documents\Douglas\Projetos\MeuPrimeiroBackend\MeuPrimeiroBackend\bin\EntityFramework.SqlServer.xml

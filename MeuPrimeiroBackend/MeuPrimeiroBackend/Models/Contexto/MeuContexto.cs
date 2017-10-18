@@ -8,5 +8,7 @@ namespace MeuPrimeiroBackend.Models.Contexto
         {
 
         }
+
+        public System.Data.Entity.DbSet<MeuPrimeiroBackend.Models.Item> Items { get; set; }
     }
 }
