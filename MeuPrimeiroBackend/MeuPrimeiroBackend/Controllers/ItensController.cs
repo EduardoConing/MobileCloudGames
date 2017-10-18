@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 using MeuPrimeiroBackend.Models;
 using MeuPrimeiroBackend.Models.Contexto;
@@ -80,7 +76,7 @@ namespace MeuPrimeiroBackend.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ItemID,Nome,Descricao,DanoMaximo,DanoMinimo,Durabilidade")] Item item)
+        public ActionResult Edit([Bind(Include = "ItemID,Nome,Descricao,DanoMaximo,DanoMinimo,Durabilidade,Ativo")] Item item)
         {
             if (ModelState.IsValid)
             {
@@ -112,7 +108,7 @@ namespace MeuPrimeiroBackend.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Item item = db.Items.Find(id);
-
+            
             // exclusao fisica
             //db.Items.Remove(item);
 

@@ -9,17 +9,17 @@ namespace MeuPrimeiroBackend.Models
         [Required, StringLength(20)]
         public string Nome { get; set; }
 
-        [Display(Name ="Descrição")]
+        [Display(Name = "Descrição")]
         public string Descricao { get; set; }
 
-        [Display(Name ="Dano Máximo")]
+        [Display(Name = "Dano Máximo")]
         public int DanoMaximo { get; set; }
 
-        [Display(Name ="Dano Mínimo")]
+        [Display(Name = "Dano Mínimo")]
         public int DanoMinimo { get; set; }
 
         public int Durabilidade { get; set; }
-
         public bool Ativo { get; set; }
+
     }
 }

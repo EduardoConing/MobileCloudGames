@@ -26,6 +26,9 @@
         <th>
             @Html.DisplayNameFor(model => model.Durabilidade)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ativo)
+        </th>
         <th></th>
     </tr>
 
@@ -45,6 +48,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Durabilidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ativo)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ItemID }) |
