@@ -102,3 +102,4 @@ C:\Users\6458\Documents\Douglas\Projetos\MeuPrimeiroBackend\MeuPrimeiroBackend\b
 C:\Users\6458\Documents\Douglas\Projetos\MeuPrimeiroBackend\MeuPrimeiroBackend\obj\Debug\MeuPrimeiroBackend.Migrations.InitialCreate.resources
 C:\Users\6458\Documents\Douglas\Projetos\MeuPrimeiroBackend\MeuPrimeiroBackend\obj\Debug\MeuPrimeiroBackend.csproj.GenerateResource.Cache
 C:\Users\6458\Documents\Douglas\Projetos\MeuPrimeiroBackend\MeuPrimeiroBackend\obj\Debug\MeuPrimeiroBackend.Migrations.AdicionandoJogador.resources
+C:\Users\6458\Documents\Douglas\Projetos\MeuPrimeiroBackend\MeuPrimeiroBackend\obj\Debug\MeuPrimeiroBackend.Migrations.AdicionandoInventario.resources

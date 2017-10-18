@@ -40,7 +40,7 @@ namespace MeuPrimeiroBackend.Controllers
         // GET: Inventarios/Create
         public ActionResult Create()
         {
-            ViewBag.JogadorID = new SelectList(db.Jogadors, "JogadorID", "Nickname");
+            ViewBag.JogadorID = new SelectList(db.Jogadores, "JogadorID", "Nickname");
             return View();
         }
 
@@ -58,7 +58,7 @@ namespace MeuPrimeiroBackend.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.JogadorID = new SelectList(db.Jogadors, "JogadorID", "Nickname", inventario.JogadorID);
+            ViewBag.JogadorID = new SelectList(db.Jogadores, "JogadorID", "Nickname", inventario.JogadorID);
             return View(inventario);
         }
 
@@ -74,7 +74,7 @@ namespace MeuPrimeiroBackend.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.JogadorID = new SelectList(db.Jogadors, "JogadorID", "Nickname", inventario.JogadorID);
+            ViewBag.JogadorID = new SelectList(db.Jogadores, "JogadorID", "Nickname", inventario.JogadorID);
             return View(inventario);
         }
 
@@ -91,7 +91,7 @@ namespace MeuPrimeiroBackend.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.JogadorID = new SelectList(db.Jogadors, "JogadorID", "Nickname", inventario.JogadorID);
+            ViewBag.JogadorID = new SelectList(db.Jogadores, "JogadorID", "Nickname", inventario.JogadorID);
             return View(inventario);
         }
 
