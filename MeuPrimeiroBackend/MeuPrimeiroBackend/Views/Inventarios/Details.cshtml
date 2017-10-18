@@ -1,0 +1,26 @@
+﻿@model MeuPrimeiroBackend.Models.Inventario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Inventario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model._Jogador.Nickname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model._Jogador.Nickname)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.InventarioID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
