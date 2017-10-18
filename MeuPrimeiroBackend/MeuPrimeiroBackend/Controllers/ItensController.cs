@@ -51,6 +51,7 @@ namespace MeuPrimeiroBackend.Controllers
         {
             if (ModelState.IsValid)
             {
+                item.Ativo = true;
                 db.Items.Add(item);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -111,7 +112,14 @@ namespace MeuPrimeiroBackend.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Item item = db.Items.Find(id);
-            db.Items.Remove(item);
+
+            // exclusao fisica
+            //db.Items.Remove(item);
+
+            // exclusao logica
+            item.Ativo = false;
+            db.Entry(item).State = EntityState.Modified;
+
             db.SaveChanges();
             return RedirectToAction("Index");
         }

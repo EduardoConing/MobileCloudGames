@@ -19,5 +19,7 @@ namespace MeuPrimeiroBackend.Models
         public int DanoMinimo { get; set; }
 
         public int Durabilidade { get; set; }
+
+        public bool Ativo { get; set; }
     }
 }
